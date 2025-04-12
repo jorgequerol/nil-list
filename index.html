@@ -4,69 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NIL · Listado de Nacimiento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #ffffff;
-      color: #333;
+      font-family: 'Quicksand', sans-serif;
+      background: #fdf6f8;
+      color: #444;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
     }
     header {
-      background-color: #fef4f6;
-      padding: 2rem;
+      background-color: #ffeef2;
+      padding: 3rem 1rem 2rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
+      color: #d86c8d;
     }
     main {
-      padding: 2rem 1rem;
-      max-width: 800px;
+      max-width: 960px;
       margin: auto;
+      padding: 2rem 1rem;
+    }
+    .intro {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border: 2px solid #f3d2da;
+      margin-bottom: 2rem;
+      font-size: 1.05rem;
     }
     section {
       margin-bottom: 3rem;
     }
     h2 {
-      background-color: #f4f4f4;
-      padding: 0.5rem 1rem;
-      border-left: 5px solid #e9b3c4;
+      font-size: 1.4rem;
+      color: #c95d81;
+      border-left: 5px solid #f4b6c3;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
     }
-    .item {
-      border-bottom: 1px solid #eee;
-      padding: 1rem 0;
+    .product {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 1rem;
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
     }
-    .item:last-child {
-      border-bottom: none;
-    }
-    .item strong {
-      font-size: 1.1rem;
-    }
-    .price {
-      color: #777;
-    }
-    a {
-      color: #d46c90;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .intro {
-      background: #fff7f9;
-      padding: 1.5rem;
-      border: 1px solid #f2dce3;
+    .product img {
+      width: 100%;
+      height: auto;
       border-radius: 8px;
-      margin-bottom: 2rem;
+    }
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-details p {
+      margin: 0.3rem 0;
+    }
+    .product-details a {
+      color: #d86c8d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .product-details a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>NIL · Listado de nacimiento</h1>
+    <h1>🎀 NIL · Listado de nacimiento</h1>
   </header>
   <main>
     <div class="intro">
@@ -81,64 +96,94 @@
 
     <section>
       <h2>🚗 COCHE</h2>
-      <div class="item">
-        <p><strong>CYBEX Base T · Black</strong></p>
-        <p class="price">249,95 € — Ref: B.01</p>
-        <a href="https://www.cybex-online.com/fr/lu/p/CS_PL_Base_T_EN.html" target="_blank">Ver producto</a>
+      <div class="product">
+        <img src="https://images.ctfassets.net/9wtva4vhlgxb/6a4K7QQNjozHZy6y8ToEvF/f0324cbb0b07df3654b3bd830a524da4/CYBEX-Base-T.jpg" alt="CYBEX Base T">
+        <div class="product-details">
+          <p><strong>CYBEX Base T · Black</strong></p>
+          <p>249,95 € — Ref: B.01</p>
+          <a href="https://www.cybex-online.com/fr/lu/p/CS_PL_Base_T_EN.html" target="_blank">Ver producto</a>
+        </div>
       </div>
     </section>
 
     <section>
       <h2>🛁 BAÑO + HIGIENE</h2>
-      <div class="item">
-        <p><strong>FRESHLY Baby Care Essentials Pack</strong></p>
-        <p class="price">79,95 € — Ref: D.02</p>
-        <a href="https://www.freshlycosmetics.com/es/productos/pack-rutina-infantil" target="_blank">Ver producto</a>
+      <div class="product">
+        <img src="https://freshlycosmetics.com/cdn/shop/files/BabyCareEssentialsPack-01.png" alt="Freshly Baby Pack">
+        <div class="product-details">
+          <p><strong>FRESHLY Baby Care Essentials Pack</strong></p>
+          <p>79,95 € — Ref: D.02</p>
+          <a href="https://www.freshlycosmetics.com/es/productos/pack-rutina-infantil" target="_blank">Ver producto</a>
+        </div>
       </div>
     </section>
 
     <section>
       <h2>🛏️ HABITACIÓN</h2>
-      <div class="item">
-        <p><strong>WALAMAMI Cubos nombre · Premium</strong></p>
-        <p class="price">35,80 € — Ref: C.03</p>
+      <div class="product">
+        <img src="https://walamami.com/wp-content/uploads/2021/09/cubos-nombre-premium.jpg" alt="WALAMAMI Cubos">
+        <div class="product-details">
+          <p><strong>WALAMAMI Cubos nombre · Premium</strong></p>
+          <p>35,80 € — Ref: C.03</p>
+        </div>
       </div>
-      <div class="item">
-        <p><strong>SUGEE Arcoíris</strong></p>
-        <p class="price">16,71 € — Ref: C.04</p>
-        <a href="https://www.amazon.de/childrens-dormitory-decoration-decorate-hand-woven/dp/B096Y4P8RX" target="_blank">Ver producto</a>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71K1zApX8+L._AC_SL1500_.jpg" alt="SUGEE Arcoíris">
+        <div class="product-details">
+          <p><strong>SUGEE Arcoíris</strong></p>
+          <p>16,71 € — Ref: C.04</p>
+          <a href="https://www.amazon.de/childrens-dormitory-decoration-decorate-hand-woven/dp/B096Y4P8RX" target="_blank">Ver producto</a>
+        </div>
       </div>
     </section>
 
     <section>
       <h2>🎁 OTROS</h2>
-      <div class="item">
-        <p><strong>PANET I PERNIL Chupetero Musk · Latte</strong></p>
-        <p class="price">17,90 € — Ref: E.01</p>
-        <a href="https://www.panetipernil.com/producto/chupetero-personalizado-musk" target="_blank">Ver producto</a>
+      <div class="product">
+        <img src="https://www.panetipernil.com/wp-content/uploads/2021/08/chupetero-personalizado-musk-latte.jpg" alt="Chupetero">
+        <div class="product-details">
+          <p><strong>PANET I PERNIL Chupetero Musk · Latte</strong></p>
+          <p>17,90 € — Ref: E.01</p>
+          <a href="https://www.panetipernil.com/producto/chupetero-personalizado-musk" target="_blank">Ver producto</a>
+        </div>
       </div>
-      <div class="item">
-        <p><strong>BETRIBE Bolsa compact · Confetti</strong></p>
-        <p class="price">80 € — Ref: E.02</p>
-        <a href="https://betribe.es/producto/compact-baby-confetti/?attribute_pa_color-del-asa=asa-beige" target="_blank">Ver producto</a>
+      <div class="product">
+        <img src="https://betribe.es/wp-content/uploads/2022/11/CompactBaby_BolsaConfetti.jpg" alt="Bolsa Confetti">
+        <div class="product-details">
+          <p><strong>BETRIBE Bolsa compact · Confetti</strong></p>
+          <p>80 € — Ref: E.02</p>
+          <a href="https://betribe.es/producto/compact-baby-confetti/?attribute_pa_color-del-asa=asa-beige" target="_blank">Ver producto</a>
+        </div>
       </div>
-      <div class="item">
-        <p><strong>BETRIBE Portadocumentos · Confetti</strong></p>
-        <p class="price">38 € — Ref: E.03</p>
+      <div class="product">
+        <img src="https://betribe.es/wp-content/uploads/2022/11/Portadocumentos-Confetti.jpg" alt="Portadocumentos">
+        <div class="product-details">
+          <p><strong>BETRIBE Portadocumentos · Confetti</strong></p>
+          <p>38 € — Ref: E.03</p>
+        </div>
       </div>
-      <div class="item">
-        <p><strong>QUKIMAX Placa nombre</strong></p>
-        <p class="price">9 € — Ref: E.04</p>
-        <a href="https://www.qukimax.com/collections/para-los-peques/products/placa-recien-nacido-ya-estoy-aqui?variant=39474907480218" target="_blank">Ver producto</a>
+      <div class="product">
+        <img src="https://cdn.shopify.com/s/files/1/0593/5100/0373/products/Placa-nombre.jpg" alt="Placa nombre">
+        <div class="product-details">
+          <p><strong>QUKIMAX Placa nombre</strong></p>
+          <p>9 € — Ref: E.04</p>
+          <a href="https://www.qukimax.com/collections/para-los-peques/products/placa-recien-nacido-ya-estoy-aqui?variant=39474907480218" target="_blank">Ver producto</a>
+        </div>
       </div>
-      <div class="item">
-        <p><strong>JANÉ Mecedora/hamaca · Evolution</strong></p>
-        <p class="price">109 € — Ref: E.05</p>
-        <a href="https://janeworld.com/hamacas-gandulas/800886-100746-evolution.html#/761267-color-cosmos" target="_blank">Ver producto</a>
+      <div class="product">
+        <img src="https://janeworld.com/21689-large_default/evolution.jpg" alt="Mecedora Evolution">
+        <div class="product-details">
+          <p><strong>JANÉ Mecedora/hamaca · Evolution</strong></p>
+          <p>109 € — Ref: E.05</p>
+          <a href="https://janeworld.com/hamacas-gandulas/800886-100746-evolution.html#/761267-color-cosmos" target="_blank">Ver producto</a>
+        </div>
       </div>
-      <div class="item">
-        <p><strong>STOKKE Tripp Tapp Hêtre · Blanco roto</strong></p>
-        <p class="price">259 € — Ref: E.06</p>
+      <div class="product">
+        <img src="https://www.stokke.com/dw/image/v2/BDPR_PRD/on/demandware.static/-/Sites-stokke-master-catalog/default/dwa7db3df2/images/large/528201.jpg" alt="STOKKE Tripp Tapp">
+        <div class="product-details">
+          <p><strong>STOKKE Tripp Tapp Hêtre · Blanco roto</strong></p>
+          <p>259 € — Ref: E.06</p>
+        </div>
       </div>
     </section>
   </main>
